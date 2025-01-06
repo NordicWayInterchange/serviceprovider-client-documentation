@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>subscriptions-list(1)</title>
+<title>messages-drain(1)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,10 +438,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="manpage">
 <div id="header">
-<h1>subscriptions-list(1) Manual Page</h1>
+<h1>messages-drain(1) Manual Page</h1>
 <h2 id="_name">Name</h2>
 <div class="sectionbody">
-<p>subscriptions-list - List the service provider subscriptions</p>
+<p>messages-drain - Drains the queue until there's more than 0.5 second delay</p>
 </div>
 </div>
 <div id="content">
@@ -449,7 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>subscriptions list</strong> [<strong>-hV</strong>]</p>
+<p><strong>messages drain</strong> <em>QUEUE</em></p>
 </div>
 </div>
 </div>
@@ -457,22 +457,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_description">Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>List the service provider subscriptions</p>
+<p>Drains the queue until there&#8217;s more than 0.5 second delay</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_options">Options</h2>
+<h2 id="_arguments">Arguments</h2>
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><strong>-h</strong>, <strong>--help</strong></dt>
+<dt class="hdlist1"><em>QUEUE</em></dt>
 <dd>
-<p>Show this help message and exit.</p>
-</dd>
-<dt class="hdlist1"><strong>-V</strong>, <strong>--version</strong></dt>
-<dd>
-<p>Print version information and exit.</p>
+<p>The queueName to connect to</p>
 </dd>
 </dl>
 </div>
