@@ -449,7 +449,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-    <p><strong>service_provider_client</strong> [<strong>-k</strong>] [key store] [<strong>-s</strong>] [key store password] [<strong>-t</strong>] [trust store] [<strong>-w</strong>] [trust store password] [COMMAND]</p>
+    <p><strong>service_provider_client</strong> [<strong>-k</strong>=<em>&lt;keystorepath&gt;</em>] [<strong>-s</strong>=<em>&lt;keystorepassword&gt;</em>]
+        [<strong>-t</strong>=<em>&lt;truststorepath&gt;</em>] [<strong>-w</strong>=<em>&lt;truststorepassword&gt;</em>] [COMMAND]</p>
 </div>
 </div>
 </div>
@@ -476,6 +477,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dd>
 <p>Print version information and exit.</p>
 </dd>
+    <dt class="hdlist1"><strong>-k</strong>, <strong>--keystorepath</strong>=<em>&lt;keystorepath&gt;</em></dt>
+    <dd>
+        <p>Absolute or relative path to the key store file location</p>
+    </dd>
+    <dt class="hdlist1"><strong>-s</strong>, <strong>--keystorepassword</strong>=<em>&lt;keystorepassword&gt;</em></dt>
+    <dd>
+        <p>Password for the given key store file </p>
+    </dd>
+    <dt class="hdlist1"><strong>-t</strong>, <strong>--truststorepath</strong>=<em>&lt;truststorepath&gt;</em></dt>
+    <dd>
+        <p>Absolute or relative path to the trust store file location</p>
+    </dd>
+    <dt class="hdlist1"><strong>-w</strong>, <strong>--truststorepassword</strong>=<em>&lt;truststorepassword&gt;</em></dt>
+    <dd>
+        <p>Password for the given trust store file </p>
+    </dd>
 </dl>
 </div>
 </div>
