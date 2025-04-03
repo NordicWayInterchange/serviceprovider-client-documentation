@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>serviceproviderclient-privatechannels-peers-get(1)</title>
+<title>serviceproviderclient-subscriptions-count(1)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,10 +436,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="manpage">
 <div id="header">
-<h1>serviceproviderclient-privatechannels-peers-get(1) Manual Page</h1>
+<h1>serviceproviderclient-subscriptions-count(1) Manual Page</h1>
 <h2 id="_name">Name</h2>
 <div class="sectionbody">
-<p>serviceproviderclient-privatechannels-peers-get - Get all private channels with service provider as peer</p>
+<p>serviceproviderclient-subscriptions-count - Count number of messages until client is killed by Ctrl+C</p>
 </div>
 </div>
 <div id="content">
@@ -447,7 +447,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>serviceproviderclient privatechannels peers get</strong> [<strong>-hV</strong>]</p>
+<p><strong>serviceproviderclient subscriptions count</strong> (<strong>-f</strong>=<em>&lt;file&gt;</em> | <strong>-i</strong>=<em>&lt;subscriptionId&gt;</em> |
+<strong>-s</strong>=<em>&lt;selector&gt;</em>)</p>
 </div>
 </div>
 </div>
@@ -455,7 +456,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_description">Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Get all private channels with service provider as peer</p>
+<p>Count number of messages until client is killed by Ctrl+C</p>
 </div>
 </div>
 </div>
@@ -464,14 +465,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><strong>-h</strong>, <strong>--help</strong></dt>
+<dt class="hdlist1"><strong>-f</strong>, <strong>--filename</strong>=<em>&lt;file&gt;</em></dt>
 <dd>
-<p>Show this help message and exit.</p>
+<p>The subscription json file</p>
 </dd>
-<dt class="hdlist1"><strong>-V</strong>, <strong>--version</strong></dt>
-<dd>
-<p>Print version information and exit.</p>
-</dd>
+<dt class="hdlist1"><strong>-i</strong>, <strong>--id</strong>=<em>&lt;subscriptionId&gt;</em></dt>
+<dt class="hdlist1"><strong>-s</strong>, <strong>--selector</strong>=<em>&lt;selector&gt;</em></dt>
 </dl>
 </div>
 </div>
@@ -479,7 +478,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
+Version <br>
 Last updated 2025-04-03 12:40:36 UTC
 </div>
 </div>
