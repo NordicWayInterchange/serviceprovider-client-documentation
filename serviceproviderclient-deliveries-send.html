@@ -447,9 +447,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>serviceproviderclient deliveries send</strong> [<strong>-bhV</strong>] [<strong>-d</strong>=<em>&lt;description&gt;</em>]
-                                      <strong>-m</strong>=<em>&lt;messageFile&gt;</em> (<strong>-f</strong>=<em>&lt;file&gt;</em> |
-                                      <strong>-s</strong>=<em>&lt;selector&gt;</em> | <strong>-i</strong>=<em>&lt;id&gt;</em>)</p>
+<p>Example:</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient deliveries send -m message.json -s
+"originatingCountry='NO'"</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient deliveries send -m message.json -i
+5d16cb60-0534-4469-b525-f92a5953322c</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient deliveries send -m message.json -f denm_delivery.json</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient deliveries send -m message.json -s
+"originatingCountry='NO'" -b</p>
 </div>
 </div>
 </div>
@@ -506,7 +519,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-04-03 12:40:36 UTC
+Last updated 2025-05-13 08:45:34 UTC
 </div>
 </div>
 </body>
