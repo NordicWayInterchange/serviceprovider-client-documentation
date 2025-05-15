@@ -447,7 +447,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>serviceproviderclient messages send</strong> [<strong>-bhV</strong>] <strong>-f</strong>=<em>&lt;messageFile&gt;</em> <em>QUEUE</em></p>
+<p>Examples:</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient messages send -f message.json
+del-2cae3067-ddc9-42e9-a496-f6671e901807</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient messages send -f -b message.json
+del-2cae3067-ddc9-42e9-a496-f6671e901807</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient messages send -f -d directory message.json
+del-2cae3067-ddc9-42e9-a496-f6671e901807</p>
 </div>
 </div>
 </div>
@@ -498,7 +510,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-05-14 13:28:28 UTC
+Last updated 2025-05-15 12:14:40 UTC
 </div>
 </div>
 </body>
