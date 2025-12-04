@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>serviceproviderclient-subscriptions-add(1)</title>
+<title>serviceproviderclient-bi-consumer(1)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,10 +436,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="manpage">
 <div id="header">
-<h1>serviceproviderclient-subscriptions-add(1) Manual Page</h1>
+<h1>serviceproviderclient-bi-consumer(1) Manual Page</h1>
 <h2 id="_name">Name</h2>
 <div class="sectionbody">
-<p>serviceproviderclient-subscriptions-add - Add a subscription for the service provider</p>
+<p>serviceproviderclient-bi-consumer - Show, add, or remove service provider's access to bi-consumer</p>
 </div>
 </div>
 <div id="content">
@@ -447,17 +447,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="paragraph">
-<p>serviceproviderclient subscriptions add -s "originatingCountry='NO'" -d
-"Description to subscription"</p>
-</div>
-<div class="paragraph">
-<p>serviceproviderclient subscriptions add -f denm_sub.json</p>
-</div>
-<div class="paragraph">
-<p>-d is optional</p>
+<p><strong>serviceproviderclient bi-consumer</strong> [<strong>-hV</strong>] [COMMAND]</p>
 </div>
 </div>
 </div>
@@ -465,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_description">Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Add a subscription for the service provider</p>
+<p>Show, add, or remove service provider&#8217;s access to bi-consumer</p>
 </div>
 </div>
 </div>
@@ -474,22 +464,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><strong>-d</strong>, <strong>--description</strong>=<em>&lt;description&gt;</em></dt>
-<dt class="hdlist1"><strong>-f</strong>, <strong>--filename</strong>=<em>&lt;file&gt;</em></dt>
-<dd>
-<p>The subscription json file</p>
-</dd>
 <dt class="hdlist1"><strong>-h</strong>, <strong>--help</strong></dt>
 <dd>
 <p>Show this help message and exit.</p>
 </dd>
-<dt class="hdlist1"><strong>-s</strong>, <strong>--selector</strong>=<em>&lt;selector&gt;</em></dt>
-<dd>
-<p>The subscription selector</p>
-</dd>
 <dt class="hdlist1"><strong>-V</strong>, <strong>--version</strong></dt>
 <dd>
 <p>Print version information and exit.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_commands">Commands</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="serviceproviderclient-bi-consumer-show.html"><strong>show</strong></a></dt>
+<dd>
+<p>show if the service provider has access to bi-consumer</p>
+</dd>
+<dt class="hdlist1"><a href="serviceproviderclient-bi-consumer-on.html"><strong>on</strong></a></dt>
+<dd>
+<p>Add bi-consumer access to service provider</p>
+</dd>
+<dt class="hdlist1"><a href="serviceproviderclient-bi-consumer-off.html"><strong>off</strong></a></dt>
+<dd>
+<p>Remove bi-consumer access to service provider</p>
 </dd>
 </dl>
 </div>
