@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>serviceproviderclient-privatechannels(1)</title>
+<title>serviceproviderclient-privatechannels-listen(1)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,10 +436,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="manpage">
 <div id="header">
-<h1>serviceproviderclient-privatechannels(1) Manual Page</h1>
+<h1>serviceproviderclient-privatechannels-listen(1) Manual Page</h1>
 <h2 id="_name">Name</h2>
 <div class="sectionbody">
-<p>serviceproviderclient-privatechannels - manage private channels for a service provider</p>
+<p>serviceproviderclient-privatechannels-listen - Listen to messages on a private channel</p>
 </div>
 </div>
 <div id="content">
@@ -447,15 +447,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>serviceproviderclient privatechannels</strong> [<strong>-hV</strong>] [COMMAND]</p>
+<p>Examples:</p>
+</div>
+<div class="paragraph">
+<p>serviceproviderclient privatechannels listen -d directory
+5a56dbcb-af41-4950-81f2-953e5cfcc4f9</p>
 </div>
 </div>
 </div>
+<h1 id="_d_is_optional" class="sect0">-d is optional</h1>
 <div class="sect1">
 <h2 id="_description">Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>manage private channels for a service provider</p>
+<p>Listen to messages on a private channel</p>
 </div>
 </div>
 </div>
@@ -464,6 +469,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="dlist">
 <dl>
+<dt class="hdlist1"><strong>-d</strong>, <strong>--directory</strong>=<em>&lt;directory&gt;</em></dt>
+<dd>
+<p>directory to save messages</p>
+</dd>
 <dt class="hdlist1"><strong>-h</strong>, <strong>--help</strong></dt>
 <dd>
 <p>Show this help message and exit.</p>
@@ -477,37 +486,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_commands">Commands</h2>
+<h2 id="_arguments">Arguments</h2>
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-list.html"><strong>list</strong></a></dt>
+<dt class="hdlist1"><em>&lt;id&gt;</em></dt>
 <dd>
-<p>list the private channels of a Service Provider</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-get.html"><strong>get</strong></a></dt>
-<dd>
-<p>Get private channel by id</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-add.html"><strong>add</strong></a></dt>
-<dd>
-<p>Adding name for client to set up private channel</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-delete.html"><strong>delete</strong></a></dt>
-<dd>
-<p>Delete a service provider private channel to a client</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-peers.html"><strong>peers</strong></a></dt>
-<dd>
-<p>get, add and delete peers from private channels you own. Remove yourself from other private channels</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-send.html"><strong>send</strong></a></dt>
-<dd>
-<p>Send message to a private channel</p>
-</dd>
-<dt class="hdlist1"><a href="serviceproviderclient-privatechannels-listen.html"><strong>listen</strong></a></dt>
-<dd>
-<p>Listen to messages on a private channel</p>
+<p>The ID of the private channel to listen to</p>
 </dd>
 </dl>
 </div>
