@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>serviceproviderclient-capabilities-delete(1)</title>
+<title>serviceproviderclient-privatechannels-peers-listen(1)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,10 +436,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="manpage">
 <div id="header">
-<h1>serviceproviderclient-capabilities-delete(1) Manual Page</h1>
+<h1>serviceproviderclient-privatechannels-peers-listen(1) Manual Page</h1>
 <h2 id="_name">Name</h2>
 <div class="sectionbody">
-<p>serviceproviderclient-capabilities-delete - Delete a service provider capability</p>
+<p>serviceproviderclient-privatechannels-peers-listen - Listen to messages on a peer</p>
 </div>
 </div>
 <div id="content">
@@ -447,18 +447,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Example:</p>
+<p>Examples:</p>
 </div>
 <div class="paragraph">
-<p>serviceproviderclient capabilities delete a4154ea0-77aa-4f04-9e3f-c325430fd2be</p>
+<p>serviceproviderclient privatechannels peers listen -d directory
+5a56dbcb-af41-4950-81f2-953e5cfcc4f9</p>
 </div>
 </div>
 </div>
+<h1 id="_d_is_optional" class="sect0">-d is optional</h1>
 <div class="sect1">
 <h2 id="_description">Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Delete a service provider capability</p>
+<p>Listen to messages on a peer</p>
 </div>
 </div>
 </div>
@@ -467,6 +469,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="dlist">
 <dl>
+<dt class="hdlist1"><strong>-d</strong>, <strong>--directory</strong>=<em>&lt;directory&gt;</em></dt>
+<dd>
+<p>directory to save messages</p>
+</dd>
 <dt class="hdlist1"><strong>-h</strong>, <strong>--help</strong></dt>
 <dd>
 <p>Show this help message and exit.</p>
@@ -484,9 +490,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><em>&lt;capabilityId&gt;</em></dt>
+<dt class="hdlist1"><em>&lt;id&gt;</em></dt>
 <dd>
-<p>The ID of the capability to delete</p>
+<p>The ID of private channel to listen to</p>
 </dd>
 </dl>
 </div>
