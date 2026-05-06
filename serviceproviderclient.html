@@ -447,8 +447,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">Synopsis</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>serviceproviderclient</strong> [<strong>-hV</strong>] <strong>-k</strong>=<em>&lt;keystorePath&gt;</em> <strong>-s</strong>=<em>&lt;keystorePassword&gt;</em>
-                      <strong>-t</strong>=<em>&lt;trustStorePath&gt;</em> [<strong>-u</strong>=<em>&lt;user&gt;</em>] <strong>-w</strong>=<em>&lt;trustStorePassword&gt;</em>
+<p><strong>serviceproviderclient</strong> [<strong>-hV</strong>] [<strong>-u</strong>=<em>&lt;user&gt;</em>] [[<strong>--cacert</strong>=<em>&lt;rootCertPath&gt;</em>
+                      <strong>--cert</strong>=<em>&lt;certificatePath&gt;</em> <strong>--key</strong>=<em>&lt;privateKeyPath&gt;</em>] |
+                      [<strong>-k</strong>=<em>&lt;keystorePath&gt;</em> <strong>-s</strong>=<em>&lt;keystorePassword&gt;</em>
+                      <strong>-t</strong>=<em>&lt;trustStorePath&gt;</em> <strong>-w</strong>=<em>&lt;trustStorePassword&gt;</em>]]
                       [<em>@&lt;filename&gt;</em>&#8230;&#8203;] <em>SERVER</em> [COMMAND]</p>
 </div>
 </div>
@@ -470,6 +472,44 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dd>
 <p>Show this help message and exit.</p>
 </dd>
+<dt class="hdlist1"><strong>-u</strong>, <strong>--user</strong>=<em>&lt;user&gt;</em></dt>
+<dd>
+<p>The service provider user</p>
+</dd>
+<dt class="hdlist1"><strong>-V</strong>, <strong>--version</strong></dt>
+<dd>
+<p>Print version information and exit.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arguments_for_using_pem_keys_and_certificates">Arguments for using PEM keys and certificates</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>--cacert</strong>=<em>&lt;rootCertPath&gt;</em></dt>
+<dd>
+<p>CA certificate to verify interchange against</p>
+</dd>
+<dt class="hdlist1"><strong>--cert</strong>=<em>&lt;certificatePath&gt;</em></dt>
+<dd>
+<p>Client certificate file name</p>
+</dd>
+<dt class="hdlist1"><strong>--key</strong>=<em>&lt;privateKeyPath&gt;</em></dt>
+<dd>
+<p>Client private key file name</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arguments_for_using_keystores_keystore_is_p12_truststore_jks">Arguments for using keystores (keystore is p12, truststore jks)</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
 <dt class="hdlist1"><strong>-k</strong>, <strong>--keystorepath</strong>=<em>&lt;keystorePath&gt;</em></dt>
 <dd>
 <p>Path to the service provider p12 keystore</p>
@@ -482,13 +522,42 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dd>
 <p>The path of the jks trust store</p>
 </dd>
-<dt class="hdlist1"><strong>-u</strong>, <strong>--user</strong>=<em>&lt;user&gt;</em></dt>
+<dt class="hdlist1"><strong>-w</strong>, <strong>--truststorepassword</strong>=<em>&lt;trustStorePassword&gt;</em></dt>
 <dd>
-<p>The service provider user</p>
+<p>The password of the jks trust store</p>
 </dd>
-<dt class="hdlist1"><strong>-V</strong>, <strong>--version</strong></dt>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tls_arguments">TLS arguments</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>--cacert</strong>=<em>&lt;rootCertPath&gt;</em></dt>
 <dd>
-<p>Print version information and exit.</p>
+<p>CA certificate to verify interchange against</p>
+</dd>
+<dt class="hdlist1"><strong>--cert</strong>=<em>&lt;certificatePath&gt;</em></dt>
+<dd>
+<p>Client certificate file name</p>
+</dd>
+<dt class="hdlist1"><strong>-k</strong>, <strong>--keystorepath</strong>=<em>&lt;keystorePath&gt;</em></dt>
+<dd>
+<p>Path to the service provider p12 keystore</p>
+</dd>
+<dt class="hdlist1"><strong>--key</strong>=<em>&lt;privateKeyPath&gt;</em></dt>
+<dd>
+<p>Client private key file name</p>
+</dd>
+<dt class="hdlist1"><strong>-s</strong>, <strong>--keystorepassword</strong>=<em>&lt;keystorePassword&gt;</em></dt>
+<dd>
+<p>The password of the service provider keystore</p>
+</dd>
+<dt class="hdlist1"><strong>-t</strong>, <strong>--truststorepath</strong>=<em>&lt;trustStorePath&gt;</em></dt>
+<dd>
+<p>The path of the jks trust store</p>
 </dd>
 <dt class="hdlist1"><strong>-w</strong>, <strong>--truststorepassword</strong>=<em>&lt;trustStorePassword&gt;</em></dt>
 <dd>
@@ -556,7 +625,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2026-04-23 10:38:23 UTC
+Last updated 2026-05-06 13:10:21 UTC
 </div>
 </div>
 </body>
